@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+
+<div class="btn-group" role="group" aria-label="Basic outlined example">
+    <a type="button" class="btn btn-outline-danger" href="{% url 'cadastrar_secretaria' %}">cadastrar_secretaria</a>
+    <a type="button" class="btn btn-outline-danger" href="{% url 'cadastrar_medico' %}">cadastrar_medico</a>
+    <a type="button" class="btn btn-outline-danger" href="{% url 'cadastrar_paciente' %}">cadastrar</a>
+    <a type="button" class="btn btn-outline-danger" href="{% url 'users' %}">Tabela de user</a>
+</div>
+{% endblock %}

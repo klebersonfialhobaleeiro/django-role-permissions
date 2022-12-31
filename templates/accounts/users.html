@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<title>{% block 'title' %}Dados{% endblock %}</title>
+
+{% block 'content' %}
+<div class="row justify-content-center">
+  <div class="col-12 ">
+    <div class="container">
+      <div class="col-md-12">
+        <table class="table">
+          <thead>
+            <tr class="table-light">Secretarias/os
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">endereco</th>
+              <th scope="col">telefone</th>
+              <th scope="col">código</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for s in secretarias%}
+            <tr class="table-light">
+              <td>{{s.id}}</td>
+              <td>{{s.first_name}}</td>
+              <td>{{s.email}}</td>
+              <td>{{s.endereco}}</td>
+              <td>{{s.telefone}}</td>
+              <td>{{s.codigo}}</td>
+            </tr>
+          {% endfor %}  
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-12">
+        <table class="table">
+          <thead>
+            <tr class="table-light">Medicas/os
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">endereco</th>
+              <th scope="col">telefone</th>
+              <th scope="col">CRM</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for m in medicos%}
+            <tr class="table-light">
+              <td>{{m.id}}</td>
+              <td>{{m.first_name}}</td>
+              <td>{{m.email}}</td>
+              <td>{{m.endereco}}</td>
+              <td>{{m.telefone}}</td>
+              <td>{{m.CRM}}</td>
+            </tr>
+          {% endfor %}  
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-12">
+        <table class="table">
+          <thead>
+            <tr class="table-light">Pacientes
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">endereco</th>
+              <th scope="col">telefone</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for p in pacientes%}
+            <tr class="table-light">
+              <td>{{p.id}}</td>
+              <td>{{p.first_name}}</td>
+              <td>{{p.email}}</td>
+              <td>{{p.endereco}}</td>
+              <td>{{p.telefone}}</td>
+            </tr>
+          {% endfor %}  
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
