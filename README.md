@@ -1,7 +1,7 @@
 
 # Título do Projeto
 
-Esse projeto tem como o intuito de gerenciar ao "acesso" da pagina
+Esse projeto tem como o intuito de gerenciar ao "acesso" da página
 
 
 ## Documentação
@@ -11,14 +11,14 @@ Esse projeto tem como o intuito de gerenciar ao "acesso" da pagina
 
 ## Instalação
 
-Como o codigo já vem com o ambiente virtual basta ativar
+Como o código já vem com o ambiente virtual(venv) então basta ativar
 
 ```bash
   source venv/bin/activate
   python3 manage.py runserver
 ```
 
-Caso não tenha baixado o ambiente virtual basta instalar o role permissions
+Caso não tenha baixado o ambiente virtual(venv) é só instalar o role permissions
 
 ```bash
   pip install django-role-permissions
